@@ -8,7 +8,11 @@ function createCard(num, question, answers, correctAnswer){
   return card
 }
 
+function evaluateGuess(){
+
+}
+
 module.exports = {
   createCard,
-
+  evaluateGuess
 }

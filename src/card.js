@@ -5,11 +5,15 @@ function createCard(num, question, answers, correctAnswer){
     answers: answers,
     correctAnswer: correctAnswer
   }
-  return card
+  return card;
 }
 
-function evaluateGuess(){
-
+function evaluateGuess(guess, correctAnswer){
+  if (guess === correctAnswer){
+    return 'correct!';
+  } else {
+    return 'incorrect!';
+  }
 }
 
 module.exports = {

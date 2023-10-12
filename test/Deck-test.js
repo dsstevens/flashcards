@@ -15,7 +15,7 @@ describe("deck", () => {
 
   it("should be a function", () => {
     expect(createDeck).to.be.a("function")
-  })
+  });
 
   it("should create a deck of cards", () => {
     const deck = createDeck([card1, card2, card3])
@@ -23,11 +23,10 @@ describe("deck", () => {
   });
 
   it("should count cards", () => {
-    const deckLength = countcards(deck)
+    const deckLength = countCards(deck)
     expect(deckLength).to.deep.equal(3)
-  })
-  //countCards it block
-})
+  });
+});
 
 
 

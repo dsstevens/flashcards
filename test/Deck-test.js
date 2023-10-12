@@ -2,7 +2,7 @@ const chai = require('chai')
 const expect = chai.expect
 
 const { createCard } = require('../src/card')
-const { createDeck } = require('../src/deck')
+const { createDeck, countCards } = require('../src/deck')
 
 describe("deck", () => {
   let card1, card2, card3, deck;
@@ -22,19 +22,10 @@ describe("deck", () => {
     expect(deck).to.deep.equal([card1, card2, card3])
   });
 
-
-  //it block 
-    // test the createDeck method is it a function
-    // create 3 or 4 cards from createDeck function as placeholders
-    // ref the example
-    // test the output is an array
-    
-
-  //execution
-  //create vars for the function
-  //assertion
-  //write it blocks for checking what the function has done
-
+  it("should count cards", () => {
+    const deckLength = countcards(deck)
+    expect(deckLength).to.deep.equal(3)
+  })
   //countCards it block
 })
 

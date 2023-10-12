@@ -11,6 +11,12 @@ describe("deck", () => {
     card3 = createCard(12, 'What is Travis\'s middle name?', ['Lex', 'William', 'Fitzgerald'], 'Fitzgerald');
     deck = createDeck([card1, card2, card3])
   });
+
+  it("should be a function", () => {
+    expect(createDeck).to.be.a("function")
+  })
+
+  
   //it block 
     // test the createDeck method is it a function
     // create 3 or 4 cards from createDeck function as placeholders

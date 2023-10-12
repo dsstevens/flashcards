@@ -16,6 +16,11 @@ describe("deck", () => {
     expect(createDeck).to.be.a("function")
   })
 
+  it("should create a deck of cards", () => {
+    const deck = createDeck([card1, card2, card3])
+    expect(deck).to.deep.equal([card1, card2, card3])
+  });
+
   
   //it block 
     // test the createDeck method is it a function

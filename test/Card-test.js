@@ -23,11 +23,14 @@ describe('turn', function() {
     expect(evaluateGuess).to.be.a('function');
   });
 
-  it('should evaluate a guess as correct or incorrect', function(){
+  it('should evaluate a correct guess as correct', function(){
     const guess = evaluateGuess('string','string');
-    expect(guess).to.equal('correct!')
-// write a test that evaluates a correct test and return correct, evaluate an incorrect test and return incorrect
-//passing in strings, returning strings
-// How?  how to write expect statements in an it block for conditional returns
+    expect(guess).to.equal('correct!');
   });
-}); 
+
+  it('should evaluate an incorrect guess as incorrect', function(){
+    const guess = evaluateGuess('wrongGuess','correctAnswer');
+    expect(guess).to.equal('incorrect!')
+  })
+});
+ 

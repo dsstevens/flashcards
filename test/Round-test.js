@@ -20,6 +20,12 @@ describe("round", () => {
     expect(createRound).to.be.a("function")
   })
 
+  it("should create a round", () => {
+    expect(round.deck).to.equal(deck)
+    expect(round.currentCard).to.equal(deck[0])
+    expect(round.turns).to.equal(0)
+    expect(round.incorrectGuesses).to.deep.equal([])
+  })
 })
 
 

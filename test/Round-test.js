@@ -16,6 +16,9 @@ describe("round", () => {
     round = createRound(deck)
   });
 
+  it("should be a function", () => {
+    expect(createRound).to.be.a("function")
+  })
 
 })
 
